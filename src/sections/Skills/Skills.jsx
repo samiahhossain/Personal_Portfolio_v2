@@ -7,13 +7,13 @@ import ellipsisLight from '../../assets/ellipsis-light.png';
 import { useTheme } from '../../common/ThemeContext';
 
 const skillGroups = [
-  ['HTML', 'CSS', 'JavaScript', 'Java', 'Python', 'C', 'C#', 'SQL', 'PHP'],
+  ['HTML', 'CSS', 'JavaScript', 'Java', 'Python', 'C', 'C#', 'SQL', 'PHP', 'Terraform'],
   ['React', 'React Native', 'Tailwind CSS', 'Node', 'JUnit'],
   ['Git', 'Azure', 'Docker', 'JetBrains', 'VSCode', 'Unity', 'Kali Linux', 'Metasploit', 'Wireshark'],
   ['pandas', 'NumPy', 'Matplotlib', 'Transformers', 'Torch', 'Datasets'],
 ];
 
-const skillsInProgress = new Set(['React', 'Unity', 'Kali Linux', 'Metasploit', 'Wireshark']);
+const skillsInProgress = new Set(['Unity', 'Kali Linux', 'Metasploit', 'Wireshark']);
 
 function Skills() {
   const { theme } = useTheme();

@@ -5,7 +5,7 @@ function About() {
     <section id="about" className={`container ${styles.section}`}>
       <h2 className={styles.title}>About</h2>
       <p>
-        Fourth year computer science student at Dalhousie University. Interested in
+        Final year computer science student at Dalhousie University. Experience and interest in
         software development, cloud computing, and cybersecurity.
       </p>
     </section>

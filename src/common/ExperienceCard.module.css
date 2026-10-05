@@ -29,8 +29,8 @@
 .logo img {
   width: 100%;
   height: 100%;
-  padding: 0.35rem;
-  object-fit: contain;
+  border-radius: inherit;
+  object-fit: cover;
 }
 
 .heading {
@@ -40,9 +40,13 @@
   gap: 1rem;
 }
 
+.heading > div:first-child {
+  min-width: 0;
+}
+
 .organization {
   font-family: 'Rubik', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: -0.03em;
 }
@@ -83,13 +87,9 @@
     border-radius: 12px;
   }
 
-  .heading {
-    flex-direction: column;
-    gap: 0.4rem;
-  }
-
   .meta {
-    align-items: flex-start;
-    text-align: left;
+    align-items: flex-end;
+    max-width: 42%;
+    text-align: right;
   }
 }

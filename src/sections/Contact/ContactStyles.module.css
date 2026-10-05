@@ -37,9 +37,10 @@
   height: 32px;
 }
 
-.item .email {
-  width: 40px;
-  height: 28px;
+.item .emailIcon {
+  width: 36px;
+  height: 36px;
+  color: var(--accent);
 }
 
 .item p {

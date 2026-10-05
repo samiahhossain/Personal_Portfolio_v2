@@ -41,10 +41,10 @@ function Hero() {
           <img className={styles.portrait} src={heroImage} alt="Profile picture of Samiah Hossain" />
         </div>
         <div className={styles.info}>
-          <p className={styles.eyebrow}>Hi there, my name is</p>
           <h1>
             Samiah <span className={styles.pronunciation}>(sa-mee-ya)</span> Hossain
           </h1>
+          <p className={styles.eyebrow}>Software Engineer</p>
           <div className={styles.socials} aria-label="Social media links">
             <a href="https://github.com/samiahhossain" target="_blank" rel="noreferrer" aria-label="GitHub">
               <img src={isLight ? githubLight : githubDark} alt="" />
