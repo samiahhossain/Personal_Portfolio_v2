@@ -1,0 +1,19 @@
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-width: 140px;
+  color: var(--text);
+}
+
+.item img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 560px) {
+  .item {
+    min-width: unset;
+    width: calc(50% - 0.5rem);
+  }
+}

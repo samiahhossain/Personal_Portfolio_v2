@@ -1,0 +1,16 @@
+.footer {
+  border-top: 1px solid var(--border);
+  background: var(--bg-elevated);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+}
+
+.content p {
+  color: var(--muted);
+  font-size: 0.8rem;
+}

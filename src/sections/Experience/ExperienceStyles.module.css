@@ -1,0 +1,17 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  font-family: 'Rubik', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.15rem);
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+
+.list {
+  display: grid;
+  gap: 1rem;
+}
