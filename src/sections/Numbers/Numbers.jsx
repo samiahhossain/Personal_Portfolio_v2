@@ -23,20 +23,18 @@ function Numbers() {
       return undefined;
     }
 
-    const checkVisibility = () => {
-      const bounds = section.getBoundingClientRect();
-      if (bounds.top < window.innerHeight && bounds.bottom > 0) {
-        setHasEnteredView(true);
-      }
-    };
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          observer.disconnect();
+          setHasEnteredView(true);
+        }
+      },
+      { rootMargin: '0px 0px -10% 0px', threshold: 0.05 },
+    );
 
-    checkVisibility();
-    window.addEventListener('scroll', checkVisibility, { passive: true });
-    window.addEventListener('resize', checkVisibility);
-    return () => {
-      window.removeEventListener('scroll', checkVisibility);
-      window.removeEventListener('resize', checkVisibility);
-    };
+    observer.observe(section);
+    return () => observer.disconnect();
   }, [hasEnteredView]);
 
   return (

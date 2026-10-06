@@ -18,7 +18,7 @@ function ExperienceCard({ title, organization, dates, location, description, log
           <p className={styles.title}>{title}</p>
         </div>
         <div className={styles.meta}>
-          <span>{dates}</span>
+          <span className={styles.date}>{dates}</span>
           <span>{location}</span>
         </div>
       </div>

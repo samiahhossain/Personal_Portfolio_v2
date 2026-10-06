@@ -17,14 +17,14 @@ function NumberCard({ value, label, shouldAnimate }) {
       return undefined;
     }
 
-    const duration = 1100;
+    const duration = 2200;
     let frameId;
     let startTime;
 
     const animate = (time) => {
       startTime ??= time;
       const progress = Math.min((time - startTime) / duration, 1);
-      const easedProgress = 1 - (1 - progress) ** 3;
+      const easedProgress = 1 - (1 - progress) ** 4;
       setDisplayValue(String(Math.round(numericValue * easedProgress)));
 
       if (progress < 1) {

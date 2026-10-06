@@ -30,6 +30,13 @@
   background: var(--panel);
   box-shadow: var(--shadow);
   text-align: center;
+  transition: transform 0.25s cubic-bezier(0.2, 0.75, 0.25, 1), border-color 0.25s ease;
+}
+
+.item:hover,
+.item:focus-visible {
+  transform: translateY(-3px);
+  border-color: var(--accent);
 }
 
 .item img {

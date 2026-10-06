@@ -6,7 +6,6 @@ import Footer from './sections/Footer/Footer';
 import Hero from './sections/Hero/Hero';
 import Numbers from './sections/Numbers/Numbers';
 import Projects from './sections/Projects/Projects';
-import Skills from './sections/Skills/Skills';
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <Experience />
         <Projects />
         <Numbers />
-        <Skills />
         <Contact />
       </main>
       <Footer />

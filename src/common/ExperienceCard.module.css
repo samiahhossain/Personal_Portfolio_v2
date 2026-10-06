@@ -5,7 +5,6 @@
   column-gap: 1.2rem;
   padding: 1.25rem 1.4rem;
   border: 1px solid var(--border);
-  border-left: 3px solid var(--accent);
   border-radius: 4px 18px 18px 4px;
   background: var(--panel);
   box-shadow: var(--shadow);
@@ -88,8 +87,23 @@
   }
 
   .meta {
-    align-items: flex-end;
-    max-width: 42%;
-    text-align: right;
+    align-items: flex-start;
+    max-width: none;
+    text-align: left;
+  }
+
+  .date {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 560px) {
+  .heading {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .meta {
+    font-size: 0.72rem;
   }
 }

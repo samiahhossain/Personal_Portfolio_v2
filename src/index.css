@@ -26,8 +26,8 @@ body {
   --text: #222222;
   --muted: #4c4c4c;
   --border: rgba(34, 34, 34, 0.14);
-  --accent: #375247;
-  --shadow: 0 18px 48px rgba(15, 15, 15, 0.08);
+  --accent: #5d85a4;
+  --shadow: 0 7px 16px rgba(15, 15, 15, 0.08);
 
   min-width: 320px;
   margin: 0;
@@ -45,8 +45,8 @@ body[data-theme='dark'] {
   --text: #f4f4f4;
   --muted: #d1d1d1;
   --border: rgba(255, 255, 255, 0.12);
-  --accent: #9bc6af;
-  --shadow: 0 18px 48px rgba(0, 0, 0, 0.26);
+  --accent: #9bbac6;
+  --shadow: 0 7px 16px rgba(0, 0, 0, 0.2);
 }
 
 img {
