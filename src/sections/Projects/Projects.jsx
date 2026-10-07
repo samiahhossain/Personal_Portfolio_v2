@@ -176,7 +176,7 @@ function Projects() {
                 )}
               </div>
               <p className={styles.description}>
-                {project.description || 'No description provided.'}
+                {project.description || ''}
               </p>
               {Object.keys(project.languages).length > 0 ? (
                 <ul className={styles.languages} aria-label={`Languages used in ${project.name}`}>

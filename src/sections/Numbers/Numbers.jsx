@@ -3,14 +3,16 @@ import NumberCard from '../../common/NumberCard';
 import styles from './NumbersStyles.module.css';
 
 const numbers = [
+  { value: '33', label: 'computer science courses' },
   { value: '16', label: 'months of internships' },
   { value: '10', label: 'technical certifications' },
-  { value: '7', label: 'personal projects' },
+  // { value: '7', label: 'personal projects' },
   { value: '6', label: 'past employers' },
   { value: '6', label: 'awards + scholarships' },
-  { value: '5x', label: 'Sexton Scholar' },
+  // { value: '5x', label: 'Sexton Scholar' },
   { value: '5', label: 'volunteer roles' },
-  { value: '4', label: 'years of university' },
+  { value: '4.0+', label: '/4.3 GPA' },
+  // { value: '4', label: 'years of university' },
 ];
 
 function Numbers() {
