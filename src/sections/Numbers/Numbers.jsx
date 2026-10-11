@@ -11,7 +11,8 @@ const numbers = [
   { value: '6', label: 'awards + scholarships' },
   // { value: '5x', label: 'Sexton Scholar' },
   { value: '5', label: 'volunteer roles' },
-  { value: '4.0+', label: '/4.3 GPA' },
+  { value: '4.2+', label: '/4.3 GPA' },
+  { value: '1', label: 'person (me!)' },
   // { value: '4', label: 'years of university' },
 ];
 
