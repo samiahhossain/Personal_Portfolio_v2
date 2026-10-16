@@ -11,6 +11,22 @@
   text-transform: uppercase;
 }
 
+.caption {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.caption::before {
+  content: '';
+  width: 1.5rem;
+  height: 2px;
+  flex: 0 0 auto;
+  background: var(--accent);
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
