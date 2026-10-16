@@ -147,6 +147,7 @@ function Projects() {
   return (
     <section id="projects" className={`container ${styles.section}`}>
       <h2 className={styles.title}>Projects</h2>
+      <p className={styles.caption}>4 of my most recently updated GitHub repositories</p>
       {loading && <p className={styles.message} role="status">Loading recent GitHub projects…</p>}
       {error && (
         <div className={styles.error} role="alert">
