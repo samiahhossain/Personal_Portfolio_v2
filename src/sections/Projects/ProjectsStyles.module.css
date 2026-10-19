@@ -13,6 +13,7 @@
 
 .caption {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.65rem;
   color: var(--muted);
@@ -25,6 +26,36 @@
   height: 2px;
   flex: 0 0 auto;
   background: var(--accent);
+}
+
+.githubLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: center;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--accent);
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.githubLink span {
+  color: var(--accent);
+  font-size: 1.2em;
+  transition: transform 0.2s ease;
+}
+
+.githubLink:hover,
+.githubLink:focus-visible {
+  gap: 0.75rem;
+  color: var(--accent);
+}
+
+.githubLink:hover span,
+.githubLink:focus-visible span {
+  transform: translateX(2px);
 }
 
 .grid {

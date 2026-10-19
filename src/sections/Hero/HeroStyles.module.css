@@ -11,23 +11,59 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.35rem;
+  gap: 1.15rem;
   max-width: 900px;
   text-align: center;
   animation: intro-appear 0.8s cubic-bezier(0.2, 0.75, 0.25, 1) both;
 }
 
 .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
   color: var(--muted);
   font-size: 0.82rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .intro {
-  max-width: 62ch;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-elevated);
   color: var(--muted);
-  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-size: 0.82rem;
+}
+
+.intro::before {
+  content: '';
+  width: 0.5rem;
+  height: 0.5rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: status-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes status-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.25;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro::before {
+    animation: none;
+  }
 }
 
 .actions {
@@ -45,7 +81,7 @@
   min-height: 46px;
   padding: 0.65rem 1.15rem;
   border: 1px solid var(--accent);
-  border-radius: 999px;
+  border-radius: 10px;
   font-size: 0.82rem;
   font-weight: 600;
   transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease;
@@ -88,32 +124,6 @@
   font-weight: 400;
   letter-spacing: 0;
   transform: translateY(-0.2em);
-}
-
-.socials {
-  display: flex;
-  gap: 1.25rem;
-}
-
-.socials a {
-  display: grid;
-  place-items: center;
-  width: 44px;
-  height: 44px;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--bg-elevated);
-  transition: transform 0.25s cubic-bezier(0.2, 0.75, 0.25, 1), border-color 0.25s ease;
-}
-
-.socials a:hover,
-.socials a:focus-visible {
-  transform: translateY(-2px);
-}
-
-.socials img {
-  width: 24px;
-  height: 24px;
 }
 
 @keyframes intro-appear {

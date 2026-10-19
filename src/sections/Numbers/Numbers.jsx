@@ -11,7 +11,7 @@ const numbers = [
   { value: '8', label: 'awards + scholarships' },
   { value: '7', label: 'past employers' },
   // { value: '5x', label: 'Sexton Scholar' },
-  { value: '4.0+', label: '/4.3 GPA' },
+  { value: '4.2+', label: '/4.3 GPA' },
   { value: '1', label: 'person (me!)' },
   // { value: '4', label: 'years of university' },
 ];
@@ -43,7 +43,7 @@ function Numbers() {
   return (
     <section id="numbers" className={`container ${styles.section}`} ref={sectionRef}>
       <h2 className={styles.title}>Numbers</h2>
-      <p className={styles.caption}>Verifiable through this website, LinkedIn, and my transcript</p>
+      {/* <p className={styles.caption}>Verifiable through my resume, LinkedIn, and transcript</p> */}
       <div className={styles.grid}>
         {numbers.map((item) => (
           <NumberCard key={item.label} {...item} shouldAnimate={hasEnteredView} />

@@ -1,10 +1,6 @@
 import { useState } from 'react';
 import styles from './HeroStyles.module.css';
 import { useTheme } from '../../common/ThemeContext';
-import githubDark from '../../assets/github-dark.svg';
-import githubLight from '../../assets/github-light.svg';
-import linkedinDark from '../../assets/linkedin-dark.svg';
-import linkedinLight from '../../assets/linkedin-light.svg';
 import moon from '../../assets/moon.svg';
 import sun from '../../assets/sun.svg';
 
@@ -62,14 +58,6 @@ function Hero() {
           <div className={styles.actions}>
             <a className={styles.primaryAction} href="#experience">Past roles</a>
             <a className={styles.secondaryAction} href="#projects">Explore my work</a>
-          </div>
-          <div className={styles.socials} aria-label="Social media links">
-            <a href="https://github.com/samiahhossain" target="_blank" rel="noreferrer" aria-label="GitHub">
-              <img src={isLight ? githubLight : githubDark} alt="" />
-            </a>
-            <a href="https://www.linkedin.com/in/samiahh" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-              <img src={isLight ? linkedinLight : linkedinDark} alt="" />
-            </a>
           </div>
         </div>
       </section>

@@ -239,6 +239,17 @@ body[data-theme='light'] .theme-toggle img {
   }
 }
 
+main > .scroll-reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s ease, transform 0.65s cubic-bezier(0.2, 0.75, 0.25, 1);
+}
+
+main > .scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

@@ -18,24 +18,34 @@ function Contact() {
           rel="noreferrer"
           aria-label="Connect and chat with Samiah on LinkedIn"
         >
-          <img src={linkedin} alt="" />
-          <p>Connect and/or chat with me on LinkedIn!</p>
+          <span className={styles.icon}>
+            <img src={linkedin} alt="" />
+          </span>
+          <span className={styles.copy}>
+            <strong>LinkedIn</strong>
+            <span>Connect and chat with me</span>
+          </span>
         </a>
         <a className={styles.item} href="mailto:samiah@dal.ca" aria-label="Email Samiah">
-          <svg
-            className={styles.emailIcon}
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.7"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-          >
-            <rect x="3" y="5" width="18" height="14" rx="2.5" />
-            <path d="m4 7 8 6 8-6" />
-          </svg>
-          <p>Email me at samiah@dal.ca.</p>
+          <span className={styles.icon}>
+            <svg
+              className={styles.emailIcon}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.7"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="5" width="18" height="14" rx="2.5" />
+              <path d="m4 7 8 6 8-6" />
+            </svg>
+          </span>
+          <span className={styles.copy}>
+            <strong>Email</strong>
+            <span>samiah@dal.ca</span>
+          </span>
         </a>
       </div>
     </section>
