@@ -148,7 +148,7 @@ function Projects() {
     <section id="projects" className={`container ${styles.section}`}>
       <h2 className={styles.title}>Projects</h2>
       <p className={styles.caption}>
-        <span>4 of my most recently updated GitHub repositories</span>
+        {/* <span>4 of my most recently updated GitHub repositories</span> */}
       </p>
       {loading && <p className={styles.message} role="status">Loading recent GitHub projects…</p>}
       {error && (

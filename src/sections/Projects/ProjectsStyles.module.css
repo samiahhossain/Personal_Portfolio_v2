@@ -20,13 +20,13 @@
   font-size: 0.9rem;
 }
 
-.caption::before {
+/* .caption::before {
   content: '';
   width: 1.5rem;
   height: 2px;
   flex: 0 0 auto;
   background: var(--accent);
-}
+} */
 
 .githubLink {
   display: inline-flex;
